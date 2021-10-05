@@ -30,7 +30,7 @@ install_requires = [
     "scikit-learn>=0.22.1,<1",
     "numba>=0.38.1,<1",
     "lightfm>=1.15,<2",
-    "lightgbm>=2.2.1,<3",
+    "lightgbm>=2.2.1",
     "memory_profiler>=0.54.0,<1",
     "nltk>=3.4,<4",
     "pydocumentdb>=2.3.3<3",  # TODO: replace with azure-cosmos
@@ -60,14 +60,14 @@ extras_require = {
     ],
     "gpu": [
         "nvidia-ml-py3>=7.352.0",
-        "tensorflow-gpu>=1.15.0,<2",  # compiled with CUDA 10.0
+        "tensorflow-gpu>=1.15.0,<3",  # compiled with CUDA 10.0
         "torch==1.2.0",  # last os-common version with CUDA 10.0 support
         "fastai>=1.0.46,<2",
     ],
     "spark": [
         "databricks_cli>=0.8.6,<1",
         "pyarrow>=0.8.0,<1.0.0",
-        "pyspark>=2.4.5,<3.0.0",
+        "pyspark>=2.4.5,<4.0.0",
     ],
     "xlearn": [
         "cmake>=3.18.4.post1",
